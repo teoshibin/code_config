@@ -1,0 +1,22 @@
+Keys, Description, mode
+
+<Leader>, <Space>, -
+
+<Leader>n, new file, Normal
+<Leader>., quick fix, Normal
+<Leader>c, change all occursence, Normal
+<Leader>f, vscode find, Normal
+
+jj, <Esc>, Insert
+n, nzz, Normal
+N, Nzz, Normal
+<Leader>o, o<Esc>0"_D, Normal
+<Leader>O, O<Esc>0"_D, Normal
+<Leader>y, "+y, Normal or Visual
+<Leader>p, "+p, Normal or Visual
+
+<Leader>f, vscode find, Visual
+>, vscode indent, Visual
+<, vscode outdent, Visual
+
+p, pgvy, Visual

@@ -1,0 +1,180 @@
+{
+    "zenMode.hideTabs": false,
+    "zenMode.centerLayout": false,
+    "zenMode.hideLineNumbers": false,
+    "zenMode.hideStatusBar": false,
+    "editor.lineNumbers": "relative",
+
+    // skip keybinds from entering shell
+    "terminal.integrated.commandsToSkipShell": [
+        "workbench.action.terminal.focusTabs", // for alt+f
+        "workbench.action.focusSideBar", // for alt+a
+        "workbench.action.toggleSidebarVisibility", // for alt+a
+        "workbench.action.decreaseViewSize", // for alt+-
+        "workbench.action.increaseViewSize" // for alt+=
+        // "workbench.action.terminal.focusNext",
+        // "workbench.action.terminal.focusPrevious",
+        // "list.focusDown",
+        // "list.focusUp"
+        // "workbench.action.terminal.kill",
+        // "workbench.action.terminal.killEditor",
+        // "workbench.action.terminal.unsplit"
+    ],
+
+    // VIM Settings
+    // "vim.debug.loggingLevelForConsole": "debug",
+    // "vim.useSystemClipboard": true,
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-w>": false
+    },
+    "vim.insertModeKeyBindings": [
+        {
+            // quick escape
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            // show quick fix
+            "before": ["<Leader>", "n"],
+            "commands": ["welcome.showNewFileEntries"]
+        },
+        {
+            // show quick fix
+            "before": ["<Leader>", "."],
+            "commands": ["editor.action.quickFix"]
+        },
+        {
+            // change all occurence
+            "before": ["<Leader>", "c"],
+            "commands": ["editor.action.changeAll"]
+        },
+        {
+            // find pop up
+            "before": ["<Leader>", "f"],
+            "commands": ["actions.find"]
+        },
+        {
+            // center find next
+            "before": ["n"],
+            "after": ["n", "z", "z"]
+        },
+        {
+            // center find previous
+            "before": ["N"],
+            "after": ["N", "z", "z"]
+        },
+        {
+            // newline below
+            "before": ["<Leader>", "o"],
+            "after": ["o", "<Esc>", "0", "\"", "_", "D"]
+        },
+        {
+            // newline on top
+            "before": ["<Leader>", "O"],
+            "after": ["O", "<Esc>", "0", "\"", "_", "D"]
+        },
+        {
+            // newline on top
+            "before": ["<Leader>", "y"],
+            "after": ["\"", "+", "y"]
+        },
+        {
+            // newline on top
+            "before": ["<Leader>", "p"],
+            "after": ["\"", "+", "p"]
+        }
+        // {
+        //     // delete without copy
+        //     "before": ["d"],
+        //     "after": ["\"", "_", "d"]
+        // },
+        // {
+        //     // delete to end without copy
+        //     "before": ["D"],
+        //     "after": ["\"", "_", "D"]
+        // },
+        // {
+        //     // delete line without copy
+        //     "before": ["d", "d"],
+        //     "after": ["\"", "_", "d", "d"]
+        // },
+        // {
+        //     // change without copy
+        //     "before": ["c"],
+        //     "after": ["\"", "_", "c"]
+        // },
+        // {
+        //     // change to end without copy
+        //     "before": ["C"],
+        //     "after": ["\"", "_", "C"]
+        // },
+        // {
+        //     // change line without copy
+        //     "before": ["c", "c"],
+        //     "after": ["\"", "_", "c", "c" ]
+        // },
+        // {
+        //     // disable highlight
+        //     "before": ["<Leader>","n"],
+        //     "commands": [":nohl"]
+        // },
+    ],
+    "vim.commandLineModeKeyBindings": [],
+    "vim.commandLineModeKeyBindingsNonRecursive": [],
+    "vim.visualModeKeyBindings": [],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            // find selected
+            "before": ["<Leader>", "f"],
+            "commands": ["actions.find"]
+        },
+        {
+            // indent right
+            "before": [">"],
+            "commands": ["editor.action.indentLines"]
+        },
+        {
+            // indent left
+            "before": ["<"],
+            "commands": ["editor.action.outdentLines"]
+        },
+        {
+            // newline on top
+            "before": ["<Leader>", "y"],
+            "after": ["\"", "+", "y"]
+        },
+        {
+            // newline on top
+            "before": ["<Leader>", "p"],
+            "after": ["\"", "+", "p"]
+        },
+        {
+            // paste on text without copy
+            "before": ["p"],
+            "after": ["p", "g", "v", "y"]
+        }
+        // {
+        //     // visual delete without copy
+        //     "before": ["d"],
+        //     "after": ["\"", "_", "d"]
+        // },
+        // {
+        //     // visual delete end without copy
+        //     "before": ["D"],
+        //     "after": ["\"", "_", "D"]
+        // },
+        // {
+        //     // visual change without copy
+        //     "before": ["c"],
+        //     "after": ["\"", "_", "c"]
+        // },
+        // {
+        //     // visual change end without copy
+        //     "before": ["C"],
+        //     "after": ["\"", "_", "C"]
+        // },
+    ]
+}
