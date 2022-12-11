@@ -1,0 +1,39 @@
+Keys, Description, Focus
+alt+a, toggle sidebar when hidden or focused and focus when visible, any
+alt+s, focus active editor, any
+alt+d, toggle terminal when hidden or focused and focus when visible, any
+alt+f, toggle terminal when hidden and focus terminal tabs, any
+shift+alt+d, create new terminal, any
+alt+h, focus previous editor tab, editor
+alt+l, focus next editor tab, editor
+shift+alt+h, focus previous editor group, editor
+shift+alt+l, focus next editor group, editor
+alt+h, focus previous splitted terminal, terminal
+alt+l, focus next splitted terminal, terminal
+shift+alt+h, focus previous terminal group, terminal
+shift+alt+l, focus next terminal group, terminal
+ctrl+alt+h, move editor tab to left, editor
+ctrl+alt+l, move editor tab to right, editor
+ctrl+shift+alt+h, move editor tab to previous group, editor
+ctrl+shift+alt+l, move editor tab to next group, editor
+alt+;, split editor right, editor
+shift+alt+;, split editor down, editor
+alt+;, split terminal to right, terminal
+alt+;, split terminal to right, terminal tabs
+ctrl+w, close terminal, terminal
+ctrl+w, close terminal, terminal tabs
+ctrl+w, close editor, editor focus
+alt+j, next sidebar view, sidebar
+alt+k, previous sidebar view, sidebar
+alt+j, next command pallet list, command pallete or snippets
+alt+k, previous command pallet list, command pallete or snippets
+j, list select next (can be any list),  terminal tabs or file explorer files
+k, list select previous (can be any list), terminal tabs or file explorer files
+alt+=, increase focused region size, any
+alt+-, decrease focused region size, any
+alt+m alt+d, maximize terminal, terminal or terminal tabs
+alt+m alt+f, maximize terminal, terminal or terminal tabs
+alt+m alt+s, toggle zen mode, any
+
+
+
