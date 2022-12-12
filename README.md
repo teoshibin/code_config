@@ -27,8 +27,8 @@
 ### Vim
 | Keys        | Description  | Mode             |
 | ----------- | ------------ | ---------------- |
-| n           | nzz          | Normal           |
 | jj          | `<Esc>`      | Insert           |
+| n           | nzz          | Normal           |
 | N           | Nzz          | Normal           |
 | `<Leader>`o | o`<Esc>`0"_D | Normal           |
 | `<Leader>`O | O`<Esc>`0"_D | Normal           |
